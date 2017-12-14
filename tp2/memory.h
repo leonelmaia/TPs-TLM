@@ -1,8 +1,7 @@
 #include "ensitlm.h"
 #include "bus.h"
 
-SC_MODULE(memory)
-{
+SC_MODULE(memory) {
         ensitlm::target_socket<memory> target;
         ensitlm::data_t* storage;
         int sizeofMemory;
